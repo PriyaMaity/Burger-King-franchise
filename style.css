@@ -6,7 +6,7 @@
 body {
   font-family: Arial, sans-serif;
   background-image: url('images/bg2.jpg');
-  object-fit: contain;
+  object-fit: cover;
   color: #2d3436;
   display: flex;
   justify-content: center;
@@ -96,5 +96,64 @@ button:hover {
 
   .menu h2 {
     font-size: 1.3rem;
+  }
+}
+@media (max-width: 768px) {
+  .restaurant-container {
+    width: 95%;
+    padding: 15px;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  .menu h2 {
+    font-size: 1.3rem;
+  }
+
+  food-items label {
+    font-size: 0.9rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+
+  #food-display img {
+    max-width: 100px;
+    max-height: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  .menu h2 {
+    font-size: 1.2rem;
+  }
+
+  .food-items {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+
+  food-items label {
+    font-size: 0.8rem;
+  }
+
+  button {
+    font-size: 0.85rem;
+    padding: 6px 12px;
+  }
+
+  #food-display img {
+    max-width: 80px;
+    max-height: 80px;
   }
 }
